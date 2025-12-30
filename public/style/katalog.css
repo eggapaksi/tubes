@@ -1,0 +1,316 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f3f6f8;
+    margin: 0;
+}
+.section {
+    padding: 40px;
+}
+
+.card {
+    display: flex;
+    background: white;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    overflow: hidden;
+}   
+
+.card img {
+    width: 300px;
+    object-fit: cover;
+}
+
+.info {
+    padding: 20px;
+}
+
+.price {
+    display: block;
+    font-weight: bold;
+    margin: 10px 0;
+    font-size: 100px;
+}
+
+button {
+    background: #5a7d9a;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.grid {
+    display: flex;
+    gap: 20px;
+}
+
+.fun-card {
+    background: white;
+    padding: 15px;
+    border-radius: 15px;
+    width: 250px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+.dokumentasi {
+    text-align: center;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+}
+/* LAYOUT 2 KOLOM */
+.rafting-layout {
+    display: flex;
+    gap: 30px;
+}
+
+/* KIRI */
+.rafting-left {
+    width: 70%;
+}
+
+/* KANAN */
+.rafting-right {
+    width: 30%;
+    background: #eef2f5;
+    padding: 25px;
+    border-radius: 20px;
+
+    text-align: center;
+}
+
+
+.rafting-right h1 {
+    margin-bottom: 10px;
+}
+
+.fasilitas {
+    list-style: disc;
+    padding-left: 20px;
+    margin: 0 auto 20px auto; /* bikin posisinya ke tengah */
+    width: fit-content;      /* lebar mengikuti isi */
+    text-align: left;        /* teks tetap rata kiri */
+}
+
+.fasilitas h3 {
+    margin-bottom: 4px;
+}
+
+
+.jadwal {
+    display: flex;
+    gap: 10px;
+}
+
+.jadwal-item {
+    background: white;
+    padding: 5px;
+    border-radius: 12px;
+    text-align: center;
+    flex: 1;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    display: none;
+    z-index: 100;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    background: #f2f5f8;
+    border-radius: 20px;
+    display: none;
+    z-index: 101;
+    overflow: hidden;
+}
+
+.modal-header {
+    background: #4b5d6b;
+    color: white;
+    padding-left: 20px ;
+    padding-right: 10px;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.modal-header h3{
+    font-size: 25px;
+}
+.btn-x {
+
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-body input {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.namaPesanan {
+    font-size: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    display: flex;
+    gap: 4px;
+}
+.biaya, .total {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+.total {
+    font-weight: bold;
+}
+
+.btn-full {
+    width: 40%;
+    padding: 10px;
+    background: #4b5d6b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    margin-left: 220px; /* geser ke kanan */
+    margin-bottom: 10px;
+}
+
+.close {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/* LAYOUT */
+.fungame-layout {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* KIRI */
+.fungame-left {
+    width: 35%;
+}
+
+.fungame-title {
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+.fungame-desc {
+    margin: 15px 0 25px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* BOX FASILITAS */
+.fasilitas-box {
+    background: #e7ecf1;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.fasilitas-box h3 {
+    margin-bottom: 10px;
+}
+
+.fasilitas-box ul {
+    padding-left: 20px;
+}
+
+.fasilitas-box li {
+    margin-bottom: 6px;
+}
+
+/* KANAN */
+.fungame-right {
+    width: 65%;
+    display: flex;
+    gap: 20px;
+}
+
+/* CARD */
+.fun-card {
+    position: relative;
+    width: 400px;
+    height: 500px;
+    border-radius: 24px;
+    overflow: hidden;
+}
+
+.fun-card img {
+    position: absolute;
+    inset: 0;             
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.fun-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.1)
+    );
+}
+.fun-info {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    color: #fff;
+    z-index: 2;
+}
+
+.fun-info h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.fun-info p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* BAGIAN BAWAH (HARGA + BUTTON) */
+.fun-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price {
+    background: #fff;
+    color: #000;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}

@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    background: #eef2f5;
+    color: #2f3a45;
+}
+
+/* Topbar */
+.topbar {
+    background: #4a5b6c;
+    color: #fff;
+    padding: 16px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.topbar nav a {
+    color: #cfd8e3;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+.topbar nav a.active {
+    background: #fff;
+    color: #4a5b6c;
+    padding: 6px 14px;
+    border-radius: 20px;
+}
+
+/* Page */
+.page-wrapper {
+    padding: 60px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Card */
+.booking-card {
+    width: 100%;
+    max-width: 800px;
+    background: #e6ebf0;
+    border-radius: 24px;
+    padding: 30px;
+}
+
+/* Status */
+.status-box {
+    display: flex;
+    gap: 15px;
+    background: #dff3ea;
+    padding: 20px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+}
+
+.status-box .icon {
+    font-size: 26px;
+    color: #2bb673;
+}
+
+/* Section */
+.section {
+    background: #f4f7fa;
+    border-radius: 20px;
+    padding: 25px;
+    margin-bottom: 25px;
+}
+
+.section h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+small {
+    font-size: 12px;
+    color: #7a8794;
+}
+
+p {
+    margin: 6px 0 0;
+    font-size: 14px;
+}
+
+span {
+    font-size: 12px;
+    color: #9aa6b2;
+}
+
+/* Payment */
+.payment-box {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+    background: #fff;
+    border-radius: 18px;
+    padding: 25px;
+}
+
+.payment-box img {
+    width: 160px;
+    height: 160px;
+}
+
+.payment-info h2 {
+    margin: 10px 0;
+    letter-spacing: 1px;
+}
+
+.muted {
+    color: #8a97a3;
+    font-size: 13px;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .payment-box {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.btn-back {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 16px;
+    border-radius: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #4b5d6b;
+    color: white;
+}

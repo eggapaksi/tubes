@@ -1,0 +1,9 @@
+*.log
+/node_modules
+/vendor
+.env
+.env.*
+.DS_Store
+.idea
+.vscode
+

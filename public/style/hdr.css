@@ -1,0 +1,106 @@
+/* =========================
+   HEADER
+========================= */
+.site-headerss {
+    height: 70px;
+    width: 100%;
+    background: #4f6471;
+}
+
+.headerss-inner {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 14px 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* =========================
+   LOGO
+========================= */
+.logo-box {
+    width: 200px;
+    height: 50px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 8px;
+    font-size: 30px;
+    font-family: 'Poppins', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* =========================
+   MENU
+========================= */
+.headerss-menu {
+    display: flex;
+    gap: 26px;
+}
+
+.headerss-menu a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    padding: 4px 0;
+}
+
+/* underline hover */
+.headerss-menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.25s ease;
+}
+
+.headerss-menu a:hover::after {
+    width: 100%;
+}
+
+
+/* =========================
+   BUTTONS
+========================= */
+.headerss-actions {
+    display: flex;
+    gap: 12px;
+}
+
+.btnn {
+    padding: 6px 16px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.btnn-outline {
+    color: #ffffff;
+    border: 1px solid #ffffff;
+}
+
+.btnn-outline:hover {
+    background: #ffffff;
+    color: #fff;
+}
+
+.btnn-primary {
+    background: #ffffff;
+    color: #4f6471;
+    border: 1px solid #ffffff;
+}
+
+.btnn-primary:hover {
+    color: #ffffff;
+    background: #4f6471;
+}

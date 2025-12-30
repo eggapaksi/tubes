@@ -1,0 +1,121 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f5f6fa;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background: #2c3e50;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+tbody tr {
+    border-bottom: 1px solid #eeeeee;
+    transition: background 0.3s ease;
+}
+
+tbody tr:hover {
+    background: #f1f1f1;
+}
+
+.btn {
+    padding: 6px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn-edit {
+    background: #3498db;
+    color: #ffffff;
+}
+
+.btn-edit:hover {
+    background: #2980b9;
+}
+
+.btn-delete {
+    background: #e74c3c;
+    color: #ffffff;
+}
+
+.btn-delete:hover {
+    background: #c0392b;
+}
+.aksi-btn {
+    display: flex;
+    gap: 8px;
+}
+
+.aksi-btn form {
+    margin: 0;
+}
+
+.status {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+.status.paid {
+    background: #2ecc71;
+}
+
+.status.pending {
+    background: #f39c12;
+}
+.aksi {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.form-inline {
+    margin: 0;
+}
+
+.btn-back {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 16px;
+    border-radius: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #4b5d6b;
+    color: white;
+}
+

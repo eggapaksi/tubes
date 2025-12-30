@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    justify-content: center;
+}
+.hero img {
+    position: absolute;
+    inset: 0;             
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* HERO */
+/*.hero {
+    height: 70vh;
+    background: center/cover;
+    position: relative;
+}*/
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.7),
+        rgba(0,0,0,0.1)
+    );
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.hero h1 {
+    font-size: 60px;
+    letter-spacing: 8px;
+}
+
+/* ABOUT */
+.about {
+    display: flex;
+    gap: 40px;
+    padding: 60px;
+}
+.about-images img {
+    width: 500px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.about-text {
+    background: #e9eef3;
+    padding: 30px;
+    border-radius: 20px;
+    align-content: center;
+}
+
+/* WHY */
+.why {
+    padding: 60px;
+}
+.why-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+.card {
+    background: #5f738a;
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* ACTIVITIES */
+.activities {
+    background: #3e5165;
+    padding: 60px;
+    color: white;
+}
+.activity-cards {
+    display: flex;
+    gap: 30px;
+}
+.activity {
+    flex: 1;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;
+    padding: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.rafting {
+    background: url(../assets/img/pilihanrafting.jpg) center/cover;
+}
+.fun {
+    background: url(../assets/img/pilihanfungame.jpg) center/cover;
+}
+
+/* REVIEWS */
+.reviews {
+    padding: 60px;
+}
+.review-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+.review {
+    background: white;
+    padding: 20px;
+    width: 220px;
+    border-radius: 20px;
+    text-align: center;
+}
+.review img {
+    width: 70px;
+    border-radius: 50%;
+}
+.review.active {
+    background: #5f738a;
+    color: white;
+}
+
