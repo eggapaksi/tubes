@@ -104,10 +104,10 @@
             <div class="d-flex justify-content-between align-items-start mb-3">
                 <div class="d-flex align-items-center">
                     <div class="reviewer-avatar">
-                        {{ strtoupper(substr($ulasan->nama, 0, 1)) }}
+                        {{ strtoupper(substr($ulasan->name, 0, 1)) }}
                     </div>
                     <div>
-                        <h5 class="mb-1">{{ $ulasan->nama }}</h5>
+                        <h5 class="mb-1">{{ $ulasan->name }}</h5>
                         @if($ulasan->email)
                             <small class="text-muted">{{ $ulasan->email }}</small>
                         @endif
@@ -170,8 +170,8 @@
                             <div class="row mb-3">
                                 <div class="col-md-6">
                                     <label class="form-label">Nama Lengkap *</label>
-                                    <input type="text" class="form-control" name="nama" 
-                                           value="{{ $ulasan->nama }}" required>
+                                    <input type="text" class="form-control" name="name" 
+                                           value="{{ $ulasan->name }}" required>
                                 </div>
                                 <div class="col-md-6">
                                     <label class="form-label">Email</label>

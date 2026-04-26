@@ -178,6 +178,48 @@ body {
     border: 1px solid #ccc;
     margin-top: 5px;
 }
+.btn-bayar {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #4b5d6b !important;
+    color: white !important;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.btn-bayar:hover {
+    background: #3b4c59;
+    transform: translateY(-2px);
+}
+
+
+/* ================= TOMBOL KEMBALI ================= */
+.btn-back {
+    position: absolute;
+    top: 10px;
+    right: 30px;
+    background: rgba(255,255,255,0.9);
+    padding: 10px 16px;
+    border-radius: 15px;
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn-back:hover {
+    background: #4b5d6b;
+    color: white;
+}
+
+.biaya, .total {
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
 
 .booking-form button {
     width: 100%;

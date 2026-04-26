@@ -29,7 +29,11 @@
                 <label>Password</label>
                 <input type="password" name="password" placeholder="Masukkan password...">
             </div>
-
+            @if ($errors->has('loginError'))
+                <div class="form-group">
+                    {{ $errors->first('loginError') }}
+                </div>
+            @endif
             <button type="submit" class="btn-login">Masuk</button>
         </form> 
 

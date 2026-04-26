@@ -8,9 +8,7 @@ use Illuminate\Support\Facades\Auth;
 
 class SessionController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
+
 
     public function index()
     {
@@ -18,9 +16,6 @@ class SessionController extends Controller
     
     }
 
-    /**
-     * Show the form for creating a new resource.   
-     */
     public function loginProses(Request $request)
     {
         $credentials = $request->validate([
@@ -32,13 +27,14 @@ class SessionController extends Controller
             $request->session()->regenerate();
             return redirect()->route('beranda.index');
         }
-        return back();
+        return back()->withErrors([
+        'loginError' => 'Email atau password salah!'
+        ])->withInput();
         
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
+
+
     public function logout(Request $request)
     {
         Auth::logout();
@@ -47,33 +43,28 @@ class SessionController extends Controller
         return redirect()->route('login');
     }
 
-    /**
-     * Display the specified resource.
-     */
+ 
+
     public function show(session $session)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
+
     public function edit(session $session)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
+  
+
     public function update(Request $request, session $session)
     {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
+   
+
     public function destroy(session $session)
     {
         //

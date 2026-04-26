@@ -157,3 +157,48 @@ span {
     background: #4b5d6b;
     color: white;
 }
+
+.booking-form {
+  display: flex;
+  justify-content: flex-start; /* posisi kiri */
+  margin-top: 16px;
+}
+
+.booking-form .btn-selesai {
+  background-color: #2563eb; /* biru modern */
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.25);
+}
+
+.booking-form .btn-selesai:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+}
+
+.booking-form .btn-selesai:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 6px rgba(37, 99, 235, 0.25);
+}
+
+.btn-bayar {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background: #4b5d6b !important;
+    color: white !important;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+.btn-bayar:hover {
+    background: #3b4c59;
+    transform: translateY(-2px);
+}  

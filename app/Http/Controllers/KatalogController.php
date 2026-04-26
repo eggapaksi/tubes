@@ -11,14 +11,17 @@ class KatalogController extends Controller
      * Display a listing of the resource.
      */
     public function index()
-    {
+    {   
+        // $user = Auth::user();
+        // return view('login.profile', compact('user'));
+
         $allKatalog = Katalog::all();
         return view('katalog.index', compact('allKatalog'));
+        
+        
     }
+    
 
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
         return view ('kategori.create');

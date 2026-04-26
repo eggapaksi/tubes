@@ -36,7 +36,7 @@ class Booking extends Model
     "tanggal_booking",
     'jumlah',
     'total_biaya',
-    'metode_pembayaran',
+    // 'metode_pembayaran',
     'catatan',
     'status_pembayaran'
     

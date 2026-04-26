@@ -21,7 +21,6 @@ return new class extends Migration
             $table->date('tanggal_booking');
             $table->integer('jumlah');  
             $table->integer('total_biaya');
-            $table->string('metode_pembayaran');
             $table->string('status_pembayaran')->default('Belum Lunas');
             $table->string('catatan')->nullable();;
 
